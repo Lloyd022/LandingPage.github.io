@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white;
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(assets/6-Bakery-Galentines-Day-112-800x533.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: rgb(255, 251, 251);
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid black;
+    border-radius: 20px;
+
+    /* Background styles */
+    background-color: #70db90cc;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+#creator .profile-img {
+    width: 300px;
+    border-radius: 50%; /* Add this line */
+}
+
+/* Add everything below here */
+
+
+
+#about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('assets/Fotolia_57709644_S.jpg');
+} 
+
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('assets/7-contact-us.jpg');
+}  
+
+/* Smooth scroll effect */
+/* html {
+    scroll-behavior: smooth;
+    } */
+
+#scrollBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        font-size: 22px;
+        width: 50px;
+        height: 50px;
+        background: #636e72;
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: none;
+    }
+
+#menu > li :last-child{
+    float: right;
+    position: absolute;
+}
+
+/* profile */
+
+.container{
+    width: 400px;
+    max-width: 400px;
+    margin:1 rem;
+    padding: 2rem;
+    box-shadow: 0 0 400px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius) ;
+    background: #fff;
+}
+
+.container,
+.form__input,
+.form__button{
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.form--hidden{
+    display: none;
+}
+
+.form > *:first-child{
+    margin-top: 0;
+}
+
+.form > *:last-child{
+    margin-top: 0;
+}
+
+.form__title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success{
+    color: #33FF80;
+}
+
+.form__message--error{
+    color: #FF3333;
+}
+
+.form__input-group{
+    margin-bottom: 1rem;
+
+}
+
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing:border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline:none;
+    background: #eeeeee;
+    transition: background 0.2s,border-color 0.2s;
+}
+
+
+.form__input:focus{
+    border-color: #00b894;
+    background: #ffffff;
+
+}
+
+.form__input--error {
+    color: #FF3333;
+    border-color: #FF3333;
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #FF3333;
+}
+
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: #00b894;
+}
+
+.form__button:hover {
+    background:#0fb9b1 ;
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color:#4b7bec;
+    text-decoration: none;
+    cursor:pointer;
+
+}
+
+
+.form__link:hover {
+    text-decoration: underline;
+
+}
